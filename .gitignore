@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+logs/
+Glit_Demo_Support_libs_*/
+.claude/
+
