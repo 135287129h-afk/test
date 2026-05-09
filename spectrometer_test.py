@@ -33,9 +33,7 @@ _fh.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(message)s'))
 logger.addHandler(_fh)
 
 # ======================== SDK 路径配置 ========================
-SDK_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                       "Glit_Demo_Support_libs_20250106")
-LIB_DIR = os.path.join(SDK_DIR, "lib", "x64")
+LIB_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib", "x64")
 
 os.environ['PATH'] = LIB_DIR + ';' + os.environ.get('PATH', '')
 ftd2xx = ctypes.CDLL(os.path.join(LIB_DIR, "ftd2xx64.dll"))
